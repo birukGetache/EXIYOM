@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import styles from "./BendingLine.module.css";
-import Navbar from "../../../Ghion-Its/src/app/components/Nav";
+import Navbar from "./Nav";
 
 const BentLine = ({color}) => {
   const canvasRef = useRef(null);
