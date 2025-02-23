@@ -1,14 +1,21 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const About = () => {
+  const [isInView, setIsInView] = useState(false);
+  const [ref, inView] = useInView({ threshold: 0.2 }); // Trigger when 20% in view
+
+  useEffect(() => {
+    setIsInView(inView);
+  }, [inView]);
+
   return (
     <motion.section
+      ref={ref} // Attach the ref to track visibility
       initial={{ opacity: 0, y: 50 }} // Initial state (hidden)
-      whileInView={{ opacity: 1, y: 0 }} // Animate when in view
-      onViewportLeave={{ opacity: 0, y: 50 }} // Reset when leaving viewport
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Animate based on visibility
       transition={{ duration: 0.5, ease: "easeOut" }} // Smooth transition
-      viewport={{ once: false, amount: 0.2 }} // Trigger when 20% in view, and allow re-triggering
       className="lg:py-16 py-6 px-4 sm:px-6 lg:px-8 w-screen mt-20"
       id="about"
     >
@@ -28,20 +35,28 @@ const About = () => {
 
         {/* Right Section - Grid */}
         <div className="grid-cols-[1fr_1fr] hidden sm:grid gap-4 p-5">
-          {gridItems.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }} // Initial state (hidden)
-              whileInView={{ opacity: 1, y: 0 }} // Animate when in view
-              onViewportLeave={{ opacity: 0, y: 50 }} // Reset when leaving viewport
-              transition={{ duration: 0.5, delay: index * 0.1 }} // Staggered delay
-              viewport={{ once: false, amount: 0.2 }} // Trigger when 20% in view, and allow re-triggering
-              className={`bg-white bg-opacity-5 rounded-md flex items-center justify-center p-3 text-gray-600 grid-item ${item.borderClass}`}
-              style={item.style}
-            >
-              {item.content}
-            </motion.div>
-          ))}
+          {gridItems.map((item, index) => {
+            const [itemInView, setItemInView] = useState(false);
+            const [itemRef, itemInViewState] = useInView({ threshold: 0.2 });
+
+            useEffect(() => {
+              setItemInView(itemInViewState);
+            }, [itemInViewState]);
+
+            return (
+              <motion.div
+                key={index}
+                ref={itemRef} // Attach the ref to track visibility
+                initial={{ opacity: 0, y: 50 }} // Initial state (hidden)
+                animate={itemInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Animate based on visibility
+                transition={{ duration: 0.5, delay: index * 0.1 }} // Staggered delay
+                className={`bg-white bg-opacity-5 rounded-md flex items-center justify-center p-3 text-gray-600 grid-item ${item.borderClass}`}
+                style={item.style}
+              >
+                {item.content}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </motion.section>
