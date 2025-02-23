@@ -29,7 +29,7 @@ const MapComponent = () => {
       />
       <Marker position={position}>
         <Popup>
-          Gion BiT
+          EXዮም Tech
         </Popup>
       </Marker>
     </MapContainer>
