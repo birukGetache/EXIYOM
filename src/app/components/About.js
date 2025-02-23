@@ -14,7 +14,7 @@ const About = () => {
       <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row gap-10 items-center justify-between space-y-10 lg:space-y-0">
         <div>
           <div className="lg:w-1/2 text-center lg:text-left bg-white bg-opacity-5 rounded-md min-w-[260px] max-w-[700px] box-border p-10">
-            <h2 className="text-4xl font-extrabold text-gray-800 mb-4">About Gion</h2>
+            <h2 className="text-4xl font-extrabold text-gray-800 mb-4">About EXዮም</h2>
             <p className="text-lg text-gray-600 mb-6">
               At EXዮም, we are committed to empowering ideas with cutting-edge
               technology. We specialize in innovative solutions that make your
