@@ -20,7 +20,7 @@ const Services = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{  amount: 0.2 }} // Trigger when 20% in view and only once
+        viewport={{  amount: 0.1 }} // Trigger when 20% in view and only once
         className="py-16 service"
       >
         <div className="max-w-7xl mx-auto text-center px-4">
