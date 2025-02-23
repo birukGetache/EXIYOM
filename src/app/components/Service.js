@@ -20,7 +20,7 @@ const Services = () => {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{  amount: 0.05 }} // Trigger when 20% in view
+        viewport={{  amount: 0.1 }} // Trigger when 20% in view
         className="py-16 service"
       >
         <div className="max-w-7xl mx-auto text-center px-4">
@@ -34,7 +34,7 @@ const Services = () => {
                 initial={{ opacity: 0, y: 50 }} // Start animation from bottom
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                viewport={{  amount: 0.05 }} // Trigger when 20% in view
+                viewport={{  amount: 0.1 }} // Trigger when 20% in view
                 className="bg-white bg-opacity-10 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform duration-300"
                 style={{ border: `2px solid ${service.borderColor}` }}
               >
