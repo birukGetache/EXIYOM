@@ -71,7 +71,7 @@ const PartnerPage = () => {
             partners.map((partner, index) => <PartnerCard key={index} partner={partner} />)
           )}
         </div>
-        <div className="bg-white bg-opacity-10 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 border-2 border-slate-700 w-full max-w-full sm:w-full">
+        <div className="bg-white bg-opacity-10 p-4 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 border-2 border-slate-700 w-full max-w-full sm:w-full">
           <p className="text-gray-700 text-lg mb-6">
             The institution works with various companies and alumni, focusing on its core objectives to achieve its mission and vision. It is a center that provides specialized professional training to students both before and after their graduation.
           </p>
