@@ -10,7 +10,7 @@ const teamMembers = [
   {
     id: 1,
     name: "Nahom Keneni",
-    role: "Co-founder & CEO | Backend Engineer | Blockchain & AI Enthusiast He is a backend engineer with a strong focus on building enterprise-level infrastructure and scalable solutions. His expertise spans distributed file systems, microservices architecture, and blockchain development, enabling me to create robust and efficient backend systems.",
+    role: "Co-founder & CEO | Backend Engineer | Blockchain & AI Enthusiast ",
     special: "Co-founder & CEO | Backend Engineer | Blockchain & AI Enthusiast He is a backend engineer with a strong focus on building enterprise-level infrastructure and scalable solutions. His expertise spans distributed file systems, microservices architecture, and blockchain development, enabling me to create robust and efficient backend systems.",
     more:"Passionate about innovation, He is currently working on generative AI and DevOps automation, exploring ways to streamline workflows and enhance system performance. With a deep understanding of complex backend architectures, I specialize in designing and implementing high-performance, secure, and scalable solutions for modern applications.",
     image: "/nahom.png",
