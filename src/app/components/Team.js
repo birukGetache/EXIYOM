@@ -48,7 +48,7 @@ const teamMembers = [
       "Expert in digital marketing strategies, brand management, and sales optimization. Proficient in leveraging data-driven insights to drive business growth and customer engagement.",
     more:
       "KEKU has a proven track record of developing and executing successful marketing campaigns that increase brand visibility and revenue. With a deep understanding of market trends and consumer behavior, Keku crafts tailored strategies that resonate with target audiences. As a sales leader, Keku excels in building strong client relationships and closing high-value deals, ensuring the company's growth and success.",
-    image: "/156351009.jpg",
+    image: "/keku.png",
     linkedin: "https://www.linkedin.com/in/biruk-getachew-708b112aa/",
     twitter: "https://twitter.com/Kaleb",
     profile: "https://ghion.com/Kaleb",
