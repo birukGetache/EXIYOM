@@ -85,7 +85,7 @@ const servicesData = [
     title: "Digital Marketing",
     description:
       "We enhance your online presence with digital marketing strategies that drive traffic and growth.",
-    borderColor: "teal",
+    borderColor: "#708090",
     iconColor: "teal",
   },
   {
