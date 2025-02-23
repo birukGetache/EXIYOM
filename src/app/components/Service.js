@@ -61,7 +61,7 @@ const servicesData = [
     title: "Website Development",
     description:
       "We specialize in building responsive, mobile-friendly websites with great SEO and fast performance.",
-    borderColor: "#33afff",
+    borderColor: "#708090",
     iconColor: "blue",
   },
   {
@@ -69,7 +69,7 @@ const servicesData = [
     title: "Web3 DApps",
     description:
       "We create decentralized applications using blockchain technology for security and scalability.",
-    borderColor: "purple",
+    borderColor: "#708090",
     iconColor: "purple",
   },
   {
@@ -77,7 +77,7 @@ const servicesData = [
     title: "Promotion",
     description:
       "We provide innovative promotional strategies to help your brand stand out and reach its audience.",
-    borderColor: "orange",
+    borderColor: "#708090",
     iconColor: "orange",
   },
   {
@@ -93,7 +93,7 @@ const servicesData = [
     title: "ERP System for Companies",
     description:
       "Our customized ERP solutions streamline business operations for increased efficiency.",
-    borderColor: "#33afff",
+    borderColor: "#708090",
     iconColor: "blue",
   },
   {
@@ -101,7 +101,7 @@ const servicesData = [
     title: "Automation with DevOps",
     description:
       "We automate workflows with DevOps practices to improve efficiency and deployment speed.",
-    borderColor: "purple",
+    borderColor: "#708090",
     iconColor: "purple",
   },
   {
@@ -109,7 +109,7 @@ const servicesData = [
     title: "AI-Based Solutions",
     description:
       "Our AI solutions help businesses enhance decision-making and optimize processes.",
-    borderColor: "teal",
+    borderColor: "#708090",
     iconColor: "teal",
   },
   {
@@ -117,7 +117,7 @@ const servicesData = [
     title: "Logo and Graphics Design",
     description:
       "We create custom logos and graphic designs to elevate your brand identity.",
-    borderColor: "#33afff",
+    borderColor: "#708090",
     iconColor: "blue",
   },
   {
@@ -125,7 +125,7 @@ const servicesData = [
     title: "UI Development",
     description:
       "We design intuitive and engaging user interfaces for a seamless user experience.",
-    borderColor: "orange",
+    borderColor: "#708090",
     iconColor: "orange",
   },
 ];
