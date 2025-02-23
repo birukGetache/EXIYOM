@@ -31,7 +31,7 @@ const Navbar = ({setColor , color}) => {
           {/* Logo */}
           <div className="flex items-center">
             <a href="/" className="text-2xl font-bold text-white h-[30px] w-[60px] flex gap-3">
-              <img src='/Logos.jpg' alt='logo' className='max-h-full max-w-full rounded-lg' />
+              <img src='/EXIYOM.png' alt='logo' className='max-h-full max-w-full rounded-lg' />
               <p className={` ${theme === 'dark' ? 'text-slate-700' : 'text-gray-300'} font-cursive text-nowrap`}> tech solution</p>
             </a>
           </div>
