@@ -71,28 +71,6 @@ const PartnerPage = () => {
             partners.map((partner, index) => <PartnerCard key={index} partner={partner} />)
           )}
         </div>
-        <div className="bg-white bg-opacity-10 p-4 rounded-lg shadow-lg hover:scale-105 transition-all duration-300 border-2 border-slate-700 w-full max-w-full sm:w-full">
-          <p className="text-gray-700 text-lg mb-6">
-            The institution works with various companies and alumni, focusing on its core objectives to achieve its mission and vision. It is a center that provides specialized professional training to students both before and after their graduation.
-          </p>
-
-          <div className="space-y-4">
-            <div className="flex items-center">
-              <span className="font-semibold text-gray-800">Main Coordinator:</span>
-              <span className="ml-2 text-gray-600">0945550071 (Henok)</span>
-            </div>
-
-            <div className="flex items-center">
-              <span className="font-semibold text-gray-800">Training Coordinator:</span>
-              <span className="ml-2 text-gray-600">0938831785 (Gedam)</span>
-            </div>
-
-            <div className="flex items-center">
-              <span className="font-semibold text-gray-800">Career Counselor:</span>
-              <span className="ml-2 text-gray-600">0941378906 (Netsanet)</span>
-            </div>
-          </div>
-        </div>
         {/* <Timeline events={events} /> */}
       </div>
     </motion.section>
