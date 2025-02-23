@@ -8,7 +8,7 @@ const About = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       viewport={{  amount: 0.2 }}
-      className="lg:py-16 py-6 px-4 sm:px-6 lg:px-8 w-screen"
+      className="lg:py-16 py-6 px-4 sm:px-6 lg:px-8 w-screen mt-20"
       id="about"
     >
       <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row gap-10 items-center justify-between space-y-10 lg:space-y-0">
